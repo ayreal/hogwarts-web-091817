@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import '../App.css';
-import Nav from './Nav'
+import React, { Component } from "react";
+import "../App.css";
+import Nav from "./Nav";
+import Filter from "./Filter";
+import HogList from "./HogList";
+import hogs from "../porkers_data";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          < Nav />
-
+        <Nav />
+        <Filter />
+        <HogList hogs={hogs} />
       </div>
-    )
+    );
   }
 }
 
