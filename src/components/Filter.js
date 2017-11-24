@@ -7,13 +7,17 @@ class Filter extends Component {
 
   render() {
     return (
-      <form>
-        <select>
-          <option>Name</option>
-          <option>Weight</option>
-        </select>
-        <input type="checkbox" />Greased Only?
-      </form>
+      <div>
+        <form>
+          <select>
+            <option>Name</option>
+            <option>Weight</option>
+          </select>
+          <input type="checkbox" />Greased Only?
+        </form>
+        <p />
+        <p />
+      </div>
     );
   }
 }
