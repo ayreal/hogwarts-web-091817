@@ -6,7 +6,7 @@ function handleClick(e) {
 
 const HogTile = props => {
   return (
-    <div className="ui eight wide column" key={props.data.name}>
+    <div className="ui eight wide column">
       <div className="ui fluid card" onClick={handleClick}>
         <div className="image">
           <img src="https://i.ytimg.com/vi/-eMV1jxfl40/hqdefault.jpg" alt="" />

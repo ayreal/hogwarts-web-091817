@@ -6,7 +6,9 @@ class HogList extends Component {
   //
   // }
   render() {
-    const allHogs = this.props.hogs.map(hog => <HogTile data={hog} />);
+    const allHogs = this.props.hogs.map(hog => (
+      <HogTile data={hog} key={hog.name} />
+    ));
 
     return <div className="ui grid container">{allHogs}</div>;
   }
